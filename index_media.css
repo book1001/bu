@@ -1,6 +1,10 @@
 /* Responsive layout */
-@media only screen and (max-width:1300px) {
-
+/* @media only screen and (max-width:1300px) { */
+@media only screen and (max-width:800px) {
+  body {
+    background: #00c55d;
+  }
+  
   .row1 {
     left: 0;
     width: 100%;
@@ -12,6 +16,8 @@
   .row2 {
     left: 0;
     width: 100%;
+    padding-right: 20px;
+    /* width: calc(100% - 20px); */
     min-width: auto;
     min-height: auto;
     transform: translate(0, 0);
@@ -33,6 +39,31 @@
     transform: translate(0, 0);
   }
 
+  #menu-arena {
+    display:block;
+  }
+
+  .toolsWorld {
+    left: 0;
+    width: 100%;
+    min-width: auto;
+    min-height: auto;
+    transform: translate(0, 0);
+  }
+
+  .toolsWorld2{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    border: none;
+    background: #00c55d;
+  }
+  
+
   .arena-project {
     /* padding-top: 58px; */
     top: 58px !important;
@@ -44,7 +75,8 @@
     top: 58px;
     width: 100%;
     height: calc(100% - 58px);
-    padding: 0 20px 0 20px;
+    padding: 0;
+
   }
 
 }
@@ -109,6 +141,9 @@
 
 @media only screen and (max-width:600px) {   /* For tablets: */
 
+  body {
+    background: #00c55d;
+  }
   .menu-top-right {
     position: fixed;
     top: 48px;
@@ -126,7 +161,8 @@
 
   .row2 {
     left: 0;
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - 20px);
     min-width: auto;
     min-height: auto;
     transform: translate(0, 0);
@@ -157,7 +193,7 @@
   .scrollContents {
     top: 88px;
     height: calc(100% - 88px);
-    padding: 0 20px 0 20px;
+    padding: 0;
   }
 
   /* .row3 {
